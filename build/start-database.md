@@ -42,17 +42,17 @@ The container skill handles this for you when an agent drives the setup.
 
 ## Cloud path
 
-Prefer a managed database from the start? The Azure SQL Database free offer
+Prefer a managed database from the start? The Azure SQL Database free tier
 gives each database 100,000 vCore seconds of serverless compute, 32 GB of data,
 and 32 GB of backup storage per month, for up to 10 databases per subscription.
 You need an Azure account and subscription.
 
 1. Open the [Azure SQL hub in the portal](https://aka.ms/azuresqlhub).
 2. In the **Create a database** pane, select **Start free**.
-3. Confirm the **Free offer applied** banner, fill in the Basics tab, then
+3. Confirm the **Free tier** applied, fill in the Basics tab, then
    select **Review + create**.
 
-The [free offer documentation](https://learn.microsoft.com/azure/azure-sql/database/free-offer)
+The [free tier documentation](https://learn.microsoft.com/azure/azure-sql/database/free-tier)
 has the current limits and what happens when a database reaches its monthly cap.
 The same creation is scriptable with the Azure CLI; the Cloud tab on the
 [home page](../index.md) carries the command.

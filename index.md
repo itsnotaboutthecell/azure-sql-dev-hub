@@ -28,19 +28,19 @@ quickstart:
 - key: cloud
   name: Cloud, free tier
   title: Create a free Azure SQL database.
-  desc: Create it in the Azure portal with the free offer, then verify from any SQL editor. Prerequisites and offer limits are in the setup guide.
+  desc: Create it in the Azure portal with the free tier, then verify from any SQL editor. Prerequisites and tier limits are in the setup guide.
   code: SELECT 1 AS connected;
   detail_title: Three steps, then you are live.
   checks:
   - - Create the database
-    - You need an Azure subscription with permission to create resources. Follow the free-offer guide and pick the free offer when prompted.
+    - You need an Azure subscription with permission to create resources. Follow the free-tier guide and pick the free tier when prompted.
   - - Open access
     - Add your IP to the firewall and sign in with Microsoft Entra.
   - - Verify
     - Run SELECT 1. A result of 1 means your connection works and you are ready for a build prompt.
   link:
-    label: 'Free offer: setup guide, prerequisites, and limits'
-    href: https://learn.microsoft.com/azure/azure-sql/database/free-offer
+    label: 'Free tier: setup guide, prerequisites, and limits'
+    href: https://learn.microsoft.com/azure/azure-sql/database/free-tier
 - key: local
   name: Local container
   pill: Preview
@@ -243,13 +243,13 @@ continuity:
   text: The Azure SQL Database container runs the same engine offline. Sign up for the Preview.
 faqs:
 - question: What do I need to get started?
-  answer: An Azure account and a development database. The free offer covers everything on this page, within its limits. If you want to work offline, sign up for the container Preview.
+  answer: An Azure account and a development database. The free tier covers everything on this page, within its limits. If you want to work offline, sign up for the container Preview.
 - question: Is it safe to let an agent write to my database?
   answer: Use a development database with least-privilege access. The skills default to parameterised queries, Entra identity over passwords, and row-level security for multi-tenant work. Review schema changes before they run against anything real.
 - question: Do I need the container?
   answer: No. Every prompt here targets Azure SQL Database in the cloud. The container is the local option, in Preview today.
 - question: What does this cost?
-  answer: The free offer covers the database for every example here, within its limits; see the offer details for what those are. The RAG example needs an embedding service, priced by whoever provides it; the prompt asks which one you have before using it.
+  answer: The free tier covers the database for every example here, within its limits; see the tier details for what those are. The RAG example needs an embedding service, priced by whoever provides it; the prompt asks which one you have before using it.
 - question: How is this different from SQL Server?
   answer: Same engine family, managed for you, with features that ship to Azure SQL Database first. The container runs the Azure SQL Database engine, not the SQL Server image.
 close:
