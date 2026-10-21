@@ -36,7 +36,7 @@ authentication moves from a local SQL login to Microsoft Entra, which is what
 that support it.
 
 Create the cloud database first if you have not: the Cloud tab on the
-[home page](../index.md) has the CLI command with the free offer applied, and
+[home page](../index.md) has the CLI command with the free tier applied, and
 [Start a database](start-database.html) covers the portal path. Then swap the
 value of `SQL_CONNECTION_STRING`, run your test suite against the cloud target,
 and compare. The container repository's
